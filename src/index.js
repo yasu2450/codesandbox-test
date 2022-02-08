@@ -141,7 +141,7 @@
 /**
  * mapやfilterを使った配列の処理
  */
-const nameArr = ["田中", "山田", "じゃけぇ"];
+// const nameArr = ["田中", "山田", "じゃけぇ"];
 // for (let index = 0; index < nameArr.length; index++) {
 //   console.log(`${index + 1}番目は${nameArr[index]}です`);
 // }
@@ -180,7 +180,30 @@ const nameArr = ["田中", "山田", "じゃけぇ"];
 // const formattedNum = typeof num == 'number' ? num.toLocaleString() : '数値を入力してください';
 // console.log(formattedNum);
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100 ? "1000を超えています" : "許容範囲内です";
-};
-console.log(checkSum(40, 60));
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "1000を超えています" : "許容範囲内です";
+// };
+// console.log(checkSum(40, 60));
+
+/**
+ * 論理演算子の本当の意味を知ろう && ||
+ */
+// const flag1 = true;
+// const flag2 = true;
+
+// if (flag1 || flag2) {
+//   console.log("1か2はtrueになります");
+// }
+// if (flag1 && flag2) {
+//   console.log("1も2はtrueになります");
+// }
+
+// ||は左側がfalseなら右側を返す
+// const num = 100;
+// const fee = num || "金額未設定です";
+// console.log(fee);
+
+// &&　　は左がtrueなら右側を返す
+const num2 = null;
+const fee2 = num2 && "何か設定されました";
+console.log(fee2);
